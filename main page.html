@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Hotel Menu</title>
+  <style>
+    body {
+      background-color: wheat;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .hotel-header {
+      background-color: #8B4513;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .hotel-header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    
+    .hotel-header p {
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+    
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin: 40px auto;
+      max-width: 900px;
+      flex-wrap: wrap;
+    }
+    
+    .menu-card {
+      width: 350px;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .menu-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+    
+    .menu-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 3px solid #8B4513;
+    }
+    
+    .menu-card h2 {
+      color: #8B4513;
+      margin: 15px 0;
+    }
+    
+    .menu-card a {
+      display: inline-block;
+      background-color: #8B4513;
+      color: white;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .menu-card a:hover {
+      background-color: #A0522D;
+    }
+    
+    footer {
+      background-color: #8B4513;
+      color: white;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hotel-header">
+    <h1>Grand Hotel</h1>
+  </header>
+  <main>
+    <h2 style="color: #8B4513; margin-top: 30px;">Our Menu Categories</h2>
+    <div class="menu-container">
+      <div class="menu-card">
+        <img src="starter.jpg" alt="Delicious Starters">
+        <h2>Starters</h2>
+        <p>Begin your culinary journey with our exquisite appetizers</p>
+        <a href="starter.html">View Starters Menu</a>
+      </div>
+      <div class="menu-card">
+        <img src="dissert.jpg" alt="Decadent Desserts">
+        <h2>Desserts</h2>
+        <p>Sweet endings to perfect your dining experience</p>
+        <a href="dissert.html">View Desserts Menu</a>
+      </div>
+    </div>
+</html>
